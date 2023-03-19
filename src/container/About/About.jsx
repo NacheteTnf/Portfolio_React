@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import './About.scss';
 import { urlFor, client } from '../../client';
 import { AppWrap, MotionWrap } from '../../wrapper';
+
 const About = () => {
   const [abouts, setAbouts] = useState([]);
 
@@ -14,7 +15,6 @@ const About = () => {
       setAbouts(data);
     });
   }, []);
-
 
   return (
     <>
